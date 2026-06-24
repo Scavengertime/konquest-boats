@@ -70,12 +70,11 @@ h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; text-transform: uppercase; l
 .hero { position: relative; min-height: 520px; display: flex; align-items: center; color: var(--white); overflow: hidden; }
 .hero__media {
   position: absolute; inset: 0;
-  background:
-    linear-gradient(90deg, rgba(20,28,24,0.78) 0%, rgba(20,28,24,0.35) 45%, rgba(20,28,24,0.15) 100%),
-    linear-gradient(160deg, #3c5640 0%, #1f3a3f 45%, #14333a 100%);
+  background-image:
+    linear-gradient(90deg, rgba(18,26,22,0.82) 0%, rgba(18,26,22,0.45) 42%, rgba(18,26,22,0.12) 100%),
+    url('images/hero.jpg');
   background-size: cover; background-position: center;
 }
-/* When a real photo is added, set: .hero__media { background-image: url('images/hero.jpg'); } keeping the dark gradient overlay above it */
 .hero__inner { position: relative; z-index: 2; padding: 3.5rem 0; }
 .hero__title { font-size: clamp(3rem, 8vw, 6rem); font-weight: 700; letter-spacing: 1px; }
 .hero__sub { font-family: 'Inter', sans-serif; text-transform: none; font-size: 1.2rem; font-weight: 500; margin: 1.1rem 0 2rem; max-width: 420px; }
@@ -102,9 +101,9 @@ h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; text-transform: uppercase; l
 .boatgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
 .boatcard { background: var(--white); border: 1px solid var(--line); display: flex; flex-direction: column; }
 .boatcard__photo { height: 200px; background-size: cover; background-position: center; }
-.boatcard__photo--a { background: linear-gradient(135deg, #4a6a52, #20323a); }
-.boatcard__photo--b { background: linear-gradient(135deg, #5a5a5a, #1f1f1f); }
-.boatcard__photo--c { background: linear-gradient(135deg, #3f7a86, #1c3b44); }
+.boatcard__photo--a { background-image: url('images/kq290.jpg'); }
+.boatcard__photo--b { background-image: url('images/kq330.jpg'); }
+.boatcard__photo--c { background-image: url('images/kq360.jpg'); background-position: center 35%; }
 .boatcard h3 { font-size: 1.5rem; font-weight: 700; padding: 1.1rem 1.3rem 0.2rem; }
 .boatcard__tag { font-family: 'Inter', sans-serif; color: var(--muted); padding: 0 1.3rem 1rem; font-size: 0.92rem; }
 .specs { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -119,9 +118,9 @@ h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; text-transform: uppercase; l
 .quest__inner { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
 .quest__gallery { display: grid; grid-template-columns: 1fr 1fr 1fr; }
 .quest__img { min-height: 320px; background-size: cover; background-position: center; }
-.quest__img--1 { background: linear-gradient(160deg, #4a6a52, #223a32); }
-.quest__img--2 { background: linear-gradient(160deg, #2f4f57, #14333a); }
-.quest__img--3 { background: linear-gradient(160deg, #6b6357, #2a2520); }
+.quest__img--1 { background-image: url('images/kq290.jpg'); }
+.quest__img--2 { background-image: url('images/hero.jpg'); }
+.quest__img--3 { background-image: url('images/logo-decal.jpg'); }
 .quest__text { padding: 3.5rem 0 3.5rem 3.5rem; }
 .quest__text > p { font-family: 'Inter', sans-serif; color: var(--muted); margin-bottom: 1.8rem; max-width: 460px; }
 .quest__features { display: grid; gap: 1.4rem; }
